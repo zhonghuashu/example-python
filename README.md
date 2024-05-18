@@ -23,8 +23,26 @@ Example python programming
 - Debug current opened file (F5)
 - Run python in linux command terminal
 ```shell
-cd src
-python3 main.py
+$ cd src
+# Run usage function.
+$ python3 main.py
+
+# Run unit test.
+$ cd test
+$ export PYTHONPATH=~/github/example-python/src:$PYTHONPATH
+$ python3 test_name_function.py
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+# Run csv file test.
+$ pip3 install matplotlib --user
+$ phthon3 usage_csv.py
+
+# Run json file test.
+$ pip3 install plotly.express
+
 ```
 # pygame
 ```python
